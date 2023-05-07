@@ -27,15 +27,6 @@ public class Employee {
         }
     }
 
-    public void addComplaint(String complaint, String complaintId) {
-        for (int i= 0; i < complaints.length; i++) {
-            if(complaints[i] == null) {
-                complaints[i] = complaint.concat(complaintId);
-                break;
-            }
-        }
-    }
-
     public String[] getComplaints() {
         return this.complaints;
     }
@@ -65,7 +56,5 @@ public class Employee {
         double netSalary = salary - taxableIncome;
         return netSalary;
     }
-
-
 
 }
